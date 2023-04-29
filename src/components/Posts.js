@@ -8,6 +8,8 @@ const Posts = (props) => {
   function handlePostClick(post) {
     setSelectedPost(post);
   }
+
+  
     
     const postsList = props.posts.map(p => {
         return <Post
@@ -17,6 +19,7 @@ const Posts = (props) => {
             author={p.author}
             post={p}
             publishNumber={p.publishNumber}
+            handleDelete = {p.handleDeletePost}
         />
     })
 

@@ -28,8 +28,10 @@ const Post = (props) => {
             handleClick()
 
         }}>
-            <h1>{props.title}</h1>
-            <h3>{props.author}</h3>
+            <h2></h2>
+            <h1>Title:{props.title}</h1>
+            <h2></h2>
+            <h3>Author:{props.author}</h3>
             {
                 selectedPost && <PostDetails post={props.post} backClick = {handleBackClick}/>
             }
