@@ -4,6 +4,7 @@ import NavBar from "./NavBar";
 import axios from "axios";
 import PostDetails from "./PostDetails";
 import AddPost from "./AddPost";
+import AddPostWithRef from "./AddPostWithRef";
 
 
 const Dashboard = () => {
@@ -85,6 +86,11 @@ const Dashboard = () => {
 
             <div>
                <AddPost />
+            </div>
+
+            <div>
+                With useRef
+                <AddPostWithRef />
             </div>
         </div>);
 }
